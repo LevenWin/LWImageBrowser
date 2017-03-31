@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D147C8F1E8BB7D200C3636F /* ImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D147C8E1E8BB7D200C3636F /* ImageCellModel.m */; };
+		0D147C931E8BC06500C3636F /* LWImageBrowserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D147C921E8BC06500C3636F /* LWImageBrowserManager.m */; };
+		0D147C961E8BC10B00C3636F /* LWImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D147C951E8BC10B00C3636F /* LWImageBrowserViewController.m */; };
+		0D147C9C1E8BFCE700C3636F /* LWBrowerItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D147C9B1E8BFCE700C3636F /* LWBrowerItemModel.m */; };
 		0D576AE11E892177004DD88A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576AE01E892177004DD88A /* main.m */; };
 		0D576AE41E892177004DD88A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576AE31E892177004DD88A /* AppDelegate.m */; };
 		0D576AE71E892177004DD88A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576AE61E892177004DD88A /* ViewController.m */; };
@@ -15,6 +19,15 @@
 		0D576AEF1E892177004DD88A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D576AED1E892177004DD88A /* LaunchScreen.storyboard */; };
 		0D576AFA1E892177004DD88A /* LWImageBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576AF91E892177004DD88A /* LWImageBrowserTests.m */; };
 		0D576B051E892177004DD88A /* LWImageBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576B041E892177004DD88A /* LWImageBrowserUITests.m */; };
+		0D576B141E8921BC004DD88A /* NetEasyTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576B131E8921BC004DD88A /* NetEasyTabView.m */; };
+		0D576B1A1E892D9A004DD88A /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576B181E892D9A004DD88A /* ImageTableViewCell.m */; };
+		0D576B1B1E892D9A004DD88A /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D576B191E892D9A004DD88A /* ImageTableViewCell.xib */; };
+		0DB3C24E1E8E415300F17506 /* JPFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3C24D1E8E415300F17506 /* JPFPSStatus.m */; };
+		0DF47C2C1E8C017F00258263 /* LWImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF47C2A1E8C017F00258263 /* LWImageCollectionViewCell.m */; };
+		0DF47C2D1E8C017F00258263 /* LWImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF47C2B1E8C017F00258263 /* LWImageCollectionViewCell.xib */; };
+		4D6423B283273B7B8D670374 /* libPods-LWImageBrowserUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 212A240E927A19B68B3B6761 /* libPods-LWImageBrowserUITests.a */; };
+		F694E744A4D24C296D1E2FCE /* libPods-LWImageBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C17001F1980C8086495B58 /* libPods-LWImageBrowser.a */; };
+		FF9B250016CDDD1DD13C910C /* libPods-LWImageBrowserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B7DF343C6499E5A16FD4DA /* libPods-LWImageBrowserTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D147C8D1E8BB7D100C3636F /* ImageCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCellModel.h; sourceTree = "<group>"; };
+		0D147C8E1E8BB7D200C3636F /* ImageCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCellModel.m; sourceTree = "<group>"; };
+		0D147C911E8BC06500C3636F /* LWImageBrowserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWImageBrowserManager.h; sourceTree = "<group>"; };
+		0D147C921E8BC06500C3636F /* LWImageBrowserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWImageBrowserManager.m; sourceTree = "<group>"; };
+		0D147C941E8BC10B00C3636F /* LWImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWImageBrowserViewController.h; sourceTree = "<group>"; };
+		0D147C951E8BC10B00C3636F /* LWImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWImageBrowserViewController.m; sourceTree = "<group>"; };
+		0D147C9A1E8BFCE700C3636F /* LWBrowerItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWBrowerItemModel.h; sourceTree = "<group>"; };
+		0D147C9B1E8BFCE700C3636F /* LWBrowerItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWBrowerItemModel.m; sourceTree = "<group>"; };
 		0D576ADC1E892177004DD88A /* LWImageBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWImageBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D576AE01E892177004DD88A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D576AE21E892177004DD88A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +72,25 @@
 		0D576B001E892177004DD88A /* LWImageBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LWImageBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D576B041E892177004DD88A /* LWImageBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWImageBrowserUITests.m; sourceTree = "<group>"; };
 		0D576B061E892177004DD88A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D576B121E8921BC004DD88A /* NetEasyTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetEasyTabView.h; sourceTree = "<group>"; };
+		0D576B131E8921BC004DD88A /* NetEasyTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetEasyTabView.m; sourceTree = "<group>"; };
+		0D576B171E892D9A004DD88A /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
+		0D576B181E892D9A004DD88A /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
+		0D576B191E892D9A004DD88A /* ImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		0DB3C24C1E8E415300F17506 /* JPFPSStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPFPSStatus.h; sourceTree = "<group>"; };
+		0DB3C24D1E8E415300F17506 /* JPFPSStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFPSStatus.m; sourceTree = "<group>"; };
+		0DF47C291E8C017F00258263 /* LWImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWImageCollectionViewCell.h; sourceTree = "<group>"; };
+		0DF47C2A1E8C017F00258263 /* LWImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWImageCollectionViewCell.m; sourceTree = "<group>"; };
+		0DF47C2B1E8C017F00258263 /* LWImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LWImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		1BB37B03DE879EEF06E9B2A2 /* Pods-LWImageBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWImageBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LWImageBrowser/Pods-LWImageBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		212A240E927A19B68B3B6761 /* libPods-LWImageBrowserUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LWImageBrowserUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1973415271A914FD129C5C /* Pods-LWImageBrowserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWImageBrowserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LWImageBrowserTests/Pods-LWImageBrowserTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CA8311D5AB5BA7240ABDC5A /* Pods-LWImageBrowserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWImageBrowserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LWImageBrowserUITests/Pods-LWImageBrowserUITests.release.xcconfig"; sourceTree = "<group>"; };
+		68C17001F1980C8086495B58 /* libPods-LWImageBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LWImageBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78F631BD867FE53724DC50BD /* Pods-LWImageBrowserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWImageBrowserUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LWImageBrowserUITests/Pods-LWImageBrowserUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8B7DF343C6499E5A16FD4DA /* libPods-LWImageBrowserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LWImageBrowserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD44235296C1B3C30C71C6B1 /* Pods-LWImageBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWImageBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-LWImageBrowser/Pods-LWImageBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		D56F5D6AE9EE9007C695FFD3 /* Pods-LWImageBrowserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWImageBrowserTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LWImageBrowserTests/Pods-LWImageBrowserTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F694E744A4D24C296D1E2FCE /* libPods-LWImageBrowser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9B250016CDDD1DD13C910C /* libPods-LWImageBrowserTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +114,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D6423B283273B7B8D670374 /* libPods-LWImageBrowserUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D147C901E8BC04500C3636F /* LWImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				0D147C911E8BC06500C3636F /* LWImageBrowserManager.h */,
+				0D147C921E8BC06500C3636F /* LWImageBrowserManager.m */,
+				0D147C941E8BC10B00C3636F /* LWImageBrowserViewController.h */,
+				0D147C951E8BC10B00C3636F /* LWImageBrowserViewController.m */,
+				0DF47C291E8C017F00258263 /* LWImageCollectionViewCell.h */,
+				0DF47C2A1E8C017F00258263 /* LWImageCollectionViewCell.m */,
+				0DF47C2B1E8C017F00258263 /* LWImageCollectionViewCell.xib */,
+				0D147C9A1E8BFCE700C3636F /* LWBrowerItemModel.h */,
+				0D147C9B1E8BFCE700C3636F /* LWBrowerItemModel.m */,
+			);
+			path = LWImageBrowser;
+			sourceTree = "<group>";
+		};
 		0D576AD31E892177004DD88A = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +144,8 @@
 				0D576AF81E892177004DD88A /* LWImageBrowserTests */,
 				0D576B031E892177004DD88A /* LWImageBrowserUITests */,
 				0D576ADD1E892177004DD88A /* Products */,
+				9C0937AF7B383F52EC5EDF27 /* Pods */,
+				14792B12E26110A9646E4A58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +162,20 @@
 		0D576ADE1E892177004DD88A /* LWImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				0D147C901E8BC04500C3636F /* LWImageBrowser */,
 				0D576AE21E892177004DD88A /* AppDelegate.h */,
 				0D576AE31E892177004DD88A /* AppDelegate.m */,
+				0DB3C24C1E8E415300F17506 /* JPFPSStatus.h */,
+				0DB3C24D1E8E415300F17506 /* JPFPSStatus.m */,
 				0D576AE51E892177004DD88A /* ViewController.h */,
 				0D576AE61E892177004DD88A /* ViewController.m */,
+				0D576B171E892D9A004DD88A /* ImageTableViewCell.h */,
+				0D576B181E892D9A004DD88A /* ImageTableViewCell.m */,
+				0D576B191E892D9A004DD88A /* ImageTableViewCell.xib */,
+				0D576B121E8921BC004DD88A /* NetEasyTabView.h */,
+				0D576B131E8921BC004DD88A /* NetEasyTabView.m */,
+				0D147C8D1E8BB7D100C3636F /* ImageCellModel.h */,
+				0D147C8E1E8BB7D200C3636F /* ImageCellModel.m */,
 				0D576AE81E892177004DD88A /* Main.storyboard */,
 				0D576AEB1E892177004DD88A /* Assets.xcassets */,
 				0D576AED1E892177004DD88A /* LaunchScreen.storyboard */,
@@ -140,6 +211,29 @@
 			path = LWImageBrowserUITests;
 			sourceTree = "<group>";
 		};
+		14792B12E26110A9646E4A58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68C17001F1980C8086495B58 /* libPods-LWImageBrowser.a */,
+				A8B7DF343C6499E5A16FD4DA /* libPods-LWImageBrowserTests.a */,
+				212A240E927A19B68B3B6761 /* libPods-LWImageBrowserUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C0937AF7B383F52EC5EDF27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BB37B03DE879EEF06E9B2A2 /* Pods-LWImageBrowser.debug.xcconfig */,
+				BD44235296C1B3C30C71C6B1 /* Pods-LWImageBrowser.release.xcconfig */,
+				D56F5D6AE9EE9007C695FFD3 /* Pods-LWImageBrowserTests.debug.xcconfig */,
+				2B1973415271A914FD129C5C /* Pods-LWImageBrowserTests.release.xcconfig */,
+				78F631BD867FE53724DC50BD /* Pods-LWImageBrowserUITests.debug.xcconfig */,
+				3CA8311D5AB5BA7240ABDC5A /* Pods-LWImageBrowserUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D576B091E892177004DD88A /* Build configuration list for PBXNativeTarget "LWImageBrowser" */;
 			buildPhases = (
+				73221CE78EA2EF073A3BFD96 /* [CP] Check Pods Manifest.lock */,
 				0D576AD81E892177004DD88A /* Sources */,
 				0D576AD91E892177004DD88A /* Frameworks */,
 				0D576ADA1E892177004DD88A /* Resources */,
+				2D9525DC5E95071F60E9DAE3 /* [CP] Embed Pods Frameworks */,
+				D3016F0C2B4DA7D994FF9C6D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D576B0C1E892177004DD88A /* Build configuration list for PBXNativeTarget "LWImageBrowserTests" */;
 			buildPhases = (
+				A783F6396E42E111F4CE4056 /* [CP] Check Pods Manifest.lock */,
 				0D576AF11E892177004DD88A /* Sources */,
 				0D576AF21E892177004DD88A /* Frameworks */,
 				0D576AF31E892177004DD88A /* Resources */,
+				535B24D96C723CD7D992D2CB /* [CP] Embed Pods Frameworks */,
+				97E9EA795922ADE7A12594CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +282,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D576B0F1E892177004DD88A /* Build configuration list for PBXNativeTarget "LWImageBrowserUITests" */;
 			buildPhases = (
+				D00D5CFCC079C3DC85EC32E0 /* [CP] Check Pods Manifest.lock */,
 				0D576AFC1E892177004DD88A /* Sources */,
 				0D576AFD1E892177004DD88A /* Frameworks */,
 				0D576AFE1E892177004DD88A /* Resources */,
+				D23236AE8B1D10AD9885400C /* [CP] Embed Pods Frameworks */,
+				2DC58312ECCA3B127D1F7E61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +310,7 @@
 				TargetAttributes = {
 					0D576ADB1E892177004DD88A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = A5HS3RH994;
 						ProvisioningStyle = Automatic;
 					};
 					0D576AF41E892177004DD88A = {
@@ -247,6 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D576AEF1E892177004DD88A /* LaunchScreen.storyboard in Resources */,
+				0D576B1B1E892D9A004DD88A /* ImageTableViewCell.xib in Resources */,
+				0DF47C2D1E8C017F00258263 /* LWImageCollectionViewCell.xib in Resources */,
 				0D576AEC1E892177004DD88A /* Assets.xcassets in Resources */,
 				0D576AEA1E892177004DD88A /* Main.storyboard in Resources */,
 			);
@@ -268,14 +374,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D9525DC5E95071F60E9DAE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LWImageBrowser/Pods-LWImageBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DC58312ECCA3B127D1F7E61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LWImageBrowserUITests/Pods-LWImageBrowserUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		535B24D96C723CD7D992D2CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LWImageBrowserTests/Pods-LWImageBrowserTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73221CE78EA2EF073A3BFD96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97E9EA795922ADE7A12594CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LWImageBrowserTests/Pods-LWImageBrowserTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A783F6396E42E111F4CE4056 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D00D5CFCC079C3DC85EC32E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D23236AE8B1D10AD9885400C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LWImageBrowserUITests/Pods-LWImageBrowserUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3016F0C2B4DA7D994FF9C6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LWImageBrowser/Pods-LWImageBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D576AD81E892177004DD88A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D147C9C1E8BFCE700C3636F /* LWBrowerItemModel.m in Sources */,
 				0D576AE71E892177004DD88A /* ViewController.m in Sources */,
+				0D147C8F1E8BB7D200C3636F /* ImageCellModel.m in Sources */,
+				0D147C961E8BC10B00C3636F /* LWImageBrowserViewController.m in Sources */,
 				0D576AE41E892177004DD88A /* AppDelegate.m in Sources */,
+				0D576B1A1E892D9A004DD88A /* ImageTableViewCell.m in Sources */,
+				0D576B141E8921BC004DD88A /* NetEasyTabView.m in Sources */,
+				0DF47C2C1E8C017F00258263 /* LWImageCollectionViewCell.m in Sources */,
+				0DB3C24E1E8E415300F17506 /* JPFPSStatus.m in Sources */,
 				0D576AE11E892177004DD88A /* main.m in Sources */,
+				0D147C931E8BC06500C3636F /* LWImageBrowserManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,9 +674,12 @@
 		};
 		0D576B0A1E892177004DD88A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB37B03DE879EEF06E9B2A2 /* Pods-LWImageBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A5HS3RH994;
 				INFOPLIST_FILE = LWImageBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leven.LWImageBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,9 +688,12 @@
 		};
 		0D576B0B1E892177004DD88A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD44235296C1B3C30C71C6B1 /* Pods-LWImageBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A5HS3RH994;
 				INFOPLIST_FILE = LWImageBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leven.LWImageBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +702,7 @@
 		};
 		0D576B0D1E892177004DD88A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D56F5D6AE9EE9007C695FFD3 /* Pods-LWImageBrowserTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LWImageBrowserTests/Info.plist;
@@ -456,6 +715,7 @@
 		};
 		0D576B0E1E892177004DD88A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1973415271A914FD129C5C /* Pods-LWImageBrowserTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LWImageBrowserTests/Info.plist;
@@ -468,6 +728,7 @@
 		};
 		0D576B101E892177004DD88A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78F631BD867FE53724DC50BD /* Pods-LWImageBrowserUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = LWImageBrowserUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -479,6 +740,7 @@
 		};
 		0D576B111E892177004DD88A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA8311D5AB5BA7240ABDC5A /* Pods-LWImageBrowserUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = LWImageBrowserUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -507,6 +769,7 @@
 				0D576B0B1E892177004DD88A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D576B0C1E892177004DD88A /* Build configuration list for PBXNativeTarget "LWImageBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +778,7 @@
 				0D576B0E1E892177004DD88A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D576B0F1E892177004DD88A /* Build configuration list for PBXNativeTarget "LWImageBrowserUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +787,7 @@
 				0D576B111E892177004DD88A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
