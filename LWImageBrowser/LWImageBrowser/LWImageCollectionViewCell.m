@@ -160,7 +160,7 @@
     image.layer.masksToBounds = YES;
     image.layer.contentsGravity = kCAGravityResizeAspectFill;
     self.contentImage.hidden = YES;
-    if (self.model.showStyle == LWImageBrowserStylePop) {
+    if (self.model.showStyle == LWImageBrowserStylePop && !CGRectEqualToRect(self.model.newFrame, CGRectZero)) {
         [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             image.frame = self.model.newFrame;
             self.contentView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0];

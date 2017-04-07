@@ -82,6 +82,8 @@ currentViewController:(UIViewController *)currentViewController
 
 
 - (void)showBrowser{
+    
+    
     LWImageBrowserViewController *vc = [[LWImageBrowserViewController alloc] init];
     vc.currentIndex = self.currentIndex;
     vc.imagesArr = self.imagesArr;
@@ -89,6 +91,9 @@ currentViewController:(UIViewController *)currentViewController
     vc.showStyle = self.showStyle;
     vc.didmissBlock = self.didmissBlock;
     vc.willDismissBlock = self.willDismissBlock;
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+    navi.navigationBarHidden = YES;
+
     switch (self.showStyle) {
         case LWImageBrowserStylePop:
             vc.shouldPop = YES;
@@ -96,15 +101,15 @@ currentViewController:(UIViewController *)currentViewController
             vc.superView = self.superView;
         case LWImageBrowserStyleNone:
             vc.screenImage = [self getScreentImage];
-            [self.currentViewController presentViewController:vc animated:NO completion:nil];
+            [self.currentViewController presentViewController:navi animated:NO completion:nil];
             break;
         case LWImageBrowserStylePush:
             if (self.currentViewController.navigationController) {
-                [self.currentViewController.navigationController pushViewController:vc animated:YES];
+                [self.currentViewController.navigationController pushViewController:navi animated:YES];
             }
             break;
         case LWImageBrowserStylePresent:
-            [self.currentViewController presentViewController:vc animated:YES completion:nil];
+            [self.currentViewController presentViewController:navi animated:YES completion:nil];
             break;
         default:
             break;
@@ -134,7 +139,7 @@ currentViewController:(UIViewController *)currentViewController
 
 - (UIImage *)getScreentImage{
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(CGRectGetWidth(self.currentViewController.view.frame), CGRectGetHeight(self.currentViewController.view.frame)), NO, 1);
-    [self.currentViewController.view
+    [[[UIApplication sharedApplication].delegate window]
     drawViewHierarchyInRect:CGRectMake(0, 0,CGRectGetWidth(self.currentViewController.view.frame), CGRectGetHeight(self.currentViewController.view.frame))
      afterScreenUpdates:NO];
     UIImage*snapshot = UIGraphicsGetImageFromCurrentImageContext();

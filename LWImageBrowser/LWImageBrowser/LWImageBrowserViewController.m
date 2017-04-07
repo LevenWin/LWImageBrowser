@@ -15,7 +15,6 @@
 @interface LWImageBrowserViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIGestureRecognizerDelegate>
 @property (nonatomic, strong) UIImageView *bgImageView;
 @property (nonatomic, strong) UICollectionView *collectView;
-@property (nonatomic, assign) BOOL shouldHideNavigationBarWhenDisappear;
 @property (nonatomic, strong) UIPageControl *pager;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
@@ -29,27 +28,18 @@
     [self initData];
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    self.shouldHideNavigationBarWhenDisappear = self.navigationController.navigationBarHidden;
-    self.navigationController.navigationBarHidden = YES;
-}
-
-- (void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    
-}
-
 - (BOOL)prefersStatusBarHidden{
-    return YES;
+    return NO;
 }
+
 - (UIStatusBarAnimation)preferredStatusBarUpdateAnimation{
     return UIStatusBarAnimationFade;
 }
-
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    self.navigationController.navigationBarHidden = self.shouldHideNavigationBarWhenDisappear;
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [UIView animateWithDuration:0.3 animations:^{
+        [self setNeedsStatusBarAppearanceUpdate];
+    }];
 }
 
 - (void)initData{
@@ -57,11 +47,13 @@
         NSInteger index = [self.imagesArr indexOfObject:imageUrl];
         LWBrowerItemModel *model = [LWBrowerItemModel new];
         model.highImage = imageUrl;
-        model.newFrame = [self getNewFrameFromOriginalFram:CGRectFromString(self.framesArr[index])];
-        model.originalFrame = CGRectFromString(self.framesArr[index]);
         model.thumbnailImage = imageUrl;
         model.isSelected = (_currentIndex == index);
         model.showStyle = self.showStyle;
+        if (index < self.framesArr.count) {
+            model.newFrame = [self getNewFrameFromOriginalFram:CGRectFromString(self.framesArr[index])];
+            model.originalFrame = CGRectFromString(self.framesArr[index]);
+        }
         [self.dataArray addObject:model];
     }
     [self.collectView reloadData];
@@ -126,11 +118,13 @@
     
     [self.view addSubview:self.collectView];
     [self.view addSubview:self.pager];
-    
-    self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
-    self.panGesture.delegate = self;
-    [self.view addGestureRecognizer:self.panGesture];
-    self.panGesture.maximumNumberOfTouches = 1;
+    if (self.showStyle == LWImageBrowserStylePop) {
+        self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
+        self.panGesture.delegate = self;
+        [self.view addGestureRecognizer:self.panGesture];
+        self.panGesture.maximumNumberOfTouches = 1;
+    }
+  
 //    [self.panGesture requireGestureRecognizerToFail:self.collectView.panGestureRecognizer];
 }
 
