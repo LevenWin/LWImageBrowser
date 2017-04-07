@@ -1,5 +1,6 @@
 # LWImageBrowser
 
+动态图
 ![](https://github.com/LevenWin/LWImageBrowser/blob/master/screen.gif)
 ## 使用方式
 ```
