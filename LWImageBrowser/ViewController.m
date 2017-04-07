@@ -159,7 +159,15 @@
         NSIndexPath *indexPath = [NSIndexPath indexPathForItem:row inSection:0];
         ImageTableViewCell *cell = [self.tbv cellForRowAtIndexPath:indexPath];
 //        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.001 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [LWImageBrowserManager browserImages:self.dataArr[indexPath.row].imgsArr placeHolderImage:nil currentViewController:self showStyle:LWImageBrowserStylePop originalFrames:self.dataArr[indexPath.row].framesArr currentIndex:index superView:cell.contentView willDismiss:^(NSInteger index) {
+            [LWImageBrowserManager browserImages:self.dataArr[indexPath.row].imgsArr
+                                placeHolderImage:nil
+                           currentViewController:self
+                                       showStyle:LWImageBrowserStylePop
+                                  originalFrames:self.dataArr[indexPath.row].framesArr
+                                    currentIndex:index
+                                       superView:cell.contentView
+                                     willDismiss:^(NSInteger index) {
+                                         NSLog(@"dismiss");
             }];
 //        });
         
