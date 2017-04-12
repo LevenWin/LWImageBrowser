@@ -25,7 +25,7 @@
 @property (nonatomic, assign) NSInteger currentIndex;
 @property (nonatomic, strong) UIView *superView;
 @property (nonatomic, assign) LWImageBrowserStyle showStyle;
-
+@property (nonatomic, copy)   void (^selectorClick)(UIButton *btn ,NSInteger index);
 @property (nonatomic, copy) void(^didmissBlock)(NSInteger index);
 @property (nonatomic, copy) void(^willDismissBlock)(NSInteger index);
 

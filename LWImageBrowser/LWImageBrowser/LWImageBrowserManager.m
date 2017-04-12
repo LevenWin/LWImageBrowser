@@ -20,6 +20,7 @@
 @property (nonatomic, strong) UIView *superView;
 @property (nonatomic, copy) void(^didmissBlock)(NSInteger index);
 @property (nonatomic, copy) void(^willDismissBlock)(NSInteger index);
+@property (nonatomic, copy) void (^selectorClick)(UIButton *,NSInteger);
 
 @end
 
@@ -28,7 +29,8 @@
 currentViewController: (UIViewController *) currentViewController
        originalFrames: (NSArray<NSString*> *) framesArr
          currentIndex: (NSInteger) currentIndex
-            superView: (UIView *) superView{
+            superView: (UIView *) superView
+    actionSelectClick:(void (^)(UIButton *,NSInteger)) selectorClick{
     [self browserImages:imagesArr
        placeHolderImage:nil
   currentViewController:currentViewController
@@ -36,6 +38,7 @@ currentViewController: (UIViewController *) currentViewController
          originalFrames:framesArr
            currentIndex:currentIndex
               superView:superView
+      actionSelectClick:selectorClick
                 willDismiss:nil];
 
 }
@@ -44,8 +47,9 @@ currentViewController: (UIViewController *) currentViewController
 + (void)browserImages:(NSArray<NSString*> *)imagesArr
 currentViewController:(UIViewController *)currentViewController
        originalFrames:(NSArray<NSString *> *)framesArr
-         currentIndex: (NSInteger) currentIndex
-            superView: (UIView *) superView
+         currentIndex:(NSInteger) currentIndex
+            superView:(UIView *) superView
+    actionSelectClick:(void (^)(UIButton *,NSInteger)) selectorClick
               willDismiss:(void (^)(NSInteger))willDismissBlock{
     [self browserImages:imagesArr
        placeHolderImage:nil
@@ -54,6 +58,7 @@ currentViewController:(UIViewController *)currentViewController
          originalFrames:framesArr
            currentIndex:currentIndex
               superView:superView
+      actionSelectClick:selectorClick
                 willDismiss:willDismissBlock];
 }
 
@@ -64,6 +69,7 @@ currentViewController:(UIViewController *)currentViewController
        originalFrames:(NSArray<NSString *> *)framesArr
          currentIndex: (NSInteger) currentIndex
             superView: (UIView *) superView
+    actionSelectClick:(void (^)(UIButton *btn ,NSInteger index))selectorClick
               willDismiss:(void (^)(NSInteger))willDismissBlock{
     LWImageBrowserManager *manager = [LWImageBrowserManager new];
     manager.imagesArr = imagesArr;
@@ -74,6 +80,7 @@ currentViewController:(UIViewController *)currentViewController
     manager.framesArr = framesArr;
     manager.superView = superView;
     manager.willDismissBlock =willDismissBlock;
+    manager.selectorClick = selectorClick;
     [manager checkPlaceHolderImage];
     [manager prepareDownLoad];
     [manager showBrowser];
@@ -91,6 +98,7 @@ currentViewController:(UIViewController *)currentViewController
     vc.showStyle = self.showStyle;
     vc.didmissBlock = self.didmissBlock;
     vc.willDismissBlock = self.willDismissBlock;
+    vc.selectorClick = self.selectorClick;
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
     navi.navigationBarHidden = YES;
 

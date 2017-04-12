@@ -22,7 +22,8 @@ typedef NS_ENUM(NSInteger, LWImageBrowserStyle) {
 currentViewController: (UIViewController *) currentViewController
        originalFrames: (NSArray<NSString*> *) framesArr
          currentIndex: (NSInteger) currentIndex
-            superView: (UIView *) superView;
+            superView: (UIView *) superView
+    actionSelectClick:(void (^)(UIButton *btn ,NSInteger index))selectorClick;
 
 
 + (void)browserImages: (NSArray<NSString*> *) imagesArr
@@ -32,7 +33,8 @@ currentViewController: (UIViewController *) currentViewController
        originalFrames: (NSArray<NSString*> *) framesArr
          currentIndex: (NSInteger) currentIndex
             superView: (UIView *) superView
-              willDismiss: (void(^)(NSInteger)) willDismissBlock;
+    actionSelectClick: (void (^)(UIButton *btn ,NSInteger index))selectorClick
+          willDismiss: (void(^)(NSInteger)) willDismissBlock;
 
 
 + (void)browserImages: (NSArray<NSString*> *) imagesArr
@@ -40,7 +42,8 @@ currentViewController: (UIViewController *) currentViewController
        originalFrames: (NSArray<NSString*> *) framesArr
          currentIndex: (NSInteger) currentIndex
             superView: (UIView *) superView
-              willDismiss: (void(^)(NSInteger)) willDismissBlock;
+    actionSelectClick: (void (^)(UIButton *btn ,NSInteger index))selectorClick
+          willDismiss: (void(^)(NSInteger)) willDismissBlock;
 
 
 

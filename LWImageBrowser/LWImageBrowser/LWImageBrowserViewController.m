@@ -9,15 +9,17 @@
 #import "LWImageBrowserViewController.h"
 #import "LWImageCollectionViewCell.h"
 #import "LWBrowerItemModel.h"
+#import "LWPagerView.h"
 #define kLWScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kLWScreenHeight [UIScreen mainScreen].bounds.size.height
 
-@interface LWImageBrowserViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIGestureRecognizerDelegate>
+@interface LWImageBrowserViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIGestureRecognizerDelegate,LWPagerViewDelegate>
 @property (nonatomic, strong) UIImageView *bgImageView;
 @property (nonatomic, strong) UICollectionView *collectView;
-@property (nonatomic, strong) UIPageControl *pager;
+@property (nonatomic, strong) LWPagerView *pager;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
+@property (nonatomic, strong) UIButton *actionBtn;
 @property (nonatomic, copy) void(^panGestureBlock)(UIGestureRecognizer *);
 @end
 @implementation LWImageBrowserViewController
@@ -57,7 +59,7 @@
         [self.dataArray addObject:model];
     }
     [self.collectView reloadData];
-    self.pager.numberOfPages = self.dataArray.count;
+    self.pager.totalCount = self.dataArray.count;
     self.pager.currentPage = self.currentIndex;
 }
 
@@ -67,7 +69,16 @@
     }
     return _bgImageView;
 }
-
+- (UIButton *)actionBtn{
+    if (!_actionBtn) {
+        _actionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_actionBtn setTitle:@"•••" forState:UIControlStateNormal];
+        [_actionBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_actionBtn addTarget:self action:@selector(actionSelect) forControlEvents:UIControlEventTouchUpInside];
+        _actionBtn.frame = CGRectMake(kScreenWidth - 48, kScreenHeight - 40, 40, 30);
+    }
+    return  _actionBtn;
+}
 - (UICollectionView *)collectView{
     if (!_collectView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
@@ -84,12 +95,10 @@
     return _collectView;
 }
 
-- (UIPageControl *)pager{
+- (LWPagerView *)pager{
     if (!_pager) {
-        _pager = [[UIPageControl alloc] init];
-        [_pager addTarget:self action:@selector(pageDidClick:) forControlEvents:UIControlEventValueChanged];
-        _pager.pageIndicatorTintColor = [UIColor darkGrayColor];
-        _pager.currentPageIndicatorTintColor = [UIColor whiteColor];
+        _pager = [[LWPagerView alloc] initWithFrame:CGRectMake(0, kScreenHeight - 40, kScreenWidth, 30)];
+        _pager.delegate = self;
     }
     return _pager;
 }
@@ -114,8 +123,6 @@
         self.bgImageView.image = self.screenImage;
         [self.view addSubview:self.bgImageView];
     }
-    self.pager.frame = CGRectMake(0,kLWScreenHeight - 40,kLWScreenWidth,30);
-    
     [self.view addSubview:self.collectView];
     [self.view addSubview:self.pager];
     if (self.showStyle == LWImageBrowserStylePop) {
@@ -124,19 +131,23 @@
         [self.view addGestureRecognizer:self.panGesture];
         self.panGesture.maximumNumberOfTouches = 1;
     }
-  
-//    [self.panGesture requireGestureRecognizerToFail:self.collectView.panGestureRecognizer];
+    if (self.selectorClick) {
+        [self.view addSubview:self.actionBtn];
+    }
 }
-
+- (void)actionSelect{
+    !_selectorClick ? :_selectorClick(self.actionBtn,_currentIndex);
+}
 - (void)panAction:(UIGestureRecognizer *)gesture{
     NSLog(@"self.view  pan");
     LWImageCollectionViewCell *cell = [self.collectView.visibleCells firstObject];
     [cell processPanGesture:gesture];
     
 }
-- (void)pageDidClick:(UIPageControl*)pager{
-    [self.collectView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:pager.currentPage inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
+- (void)pagerDidClickAtIndex:(NSInteger)currentIndex{
+     [self.collectView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:_pager.currentPage inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
 }
+
 - (CGRect )getNewFrameFromOriginalFram:(CGRect)originalFrame{
     if (self.shouldPop && self.framesArr) {
         CGRect newFrame = [self.superView convertRect:originalFrame toView:[[[UIApplication sharedApplication] delegate] window]];
