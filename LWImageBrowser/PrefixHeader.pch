@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  LWImageBrowser
+//
+//  Created by leven on 2017/12/18.
+//  Copyright © 2017年 leven. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height  
+#define Image(name)  [UIImage imageNamed:name]
+
+#import <Masonry.h>
+#import <SDWebImageDownloader.h>
+#import <UIImageView+WebCache.h>
+#import "UIDeviceHardware.h"
+#import <YYKit.h>
+#endif /* PrefixHeader_pch */

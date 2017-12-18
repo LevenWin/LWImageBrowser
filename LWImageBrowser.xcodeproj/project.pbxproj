@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D147C8F1E8BB7D200C3636F /* ImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D147C8E1E8BB7D200C3636F /* ImageCellModel.m */; };
-		0D147C931E8BC06500C3636F /* LWImageBrowserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D147C921E8BC06500C3636F /* LWImageBrowserManager.m */; };
-		0D147C961E8BC10B00C3636F /* LWImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D147C951E8BC10B00C3636F /* LWImageBrowserViewController.m */; };
-		0D147C9C1E8BFCE700C3636F /* LWBrowerItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D147C9B1E8BFCE700C3636F /* LWBrowerItemModel.m */; };
 		0D576AE11E892177004DD88A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576AE01E892177004DD88A /* main.m */; };
 		0D576AE41E892177004DD88A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576AE31E892177004DD88A /* AppDelegate.m */; };
 		0D576AE71E892177004DD88A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576AE61E892177004DD88A /* ViewController.m */; };
@@ -19,12 +15,15 @@
 		0D576AEF1E892177004DD88A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D576AED1E892177004DD88A /* LaunchScreen.storyboard */; };
 		0D576AFA1E892177004DD88A /* LWImageBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576AF91E892177004DD88A /* LWImageBrowserTests.m */; };
 		0D576B051E892177004DD88A /* LWImageBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576B041E892177004DD88A /* LWImageBrowserUITests.m */; };
-		0D576B141E8921BC004DD88A /* NetEasyTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576B131E8921BC004DD88A /* NetEasyTabView.m */; };
-		0D576B1A1E892D9A004DD88A /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576B181E892D9A004DD88A /* ImageTableViewCell.m */; };
-		0D576B1B1E892D9A004DD88A /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D576B191E892D9A004DD88A /* ImageTableViewCell.xib */; };
-		0DB3C24E1E8E415300F17506 /* JPFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3C24D1E8E415300F17506 /* JPFPSStatus.m */; };
-		0DF47C2C1E8C017F00258263 /* LWImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF47C2A1E8C017F00258263 /* LWImageCollectionViewCell.m */; };
-		0DF47C2D1E8C017F00258263 /* LWImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF47C2B1E8C017F00258263 /* LWImageCollectionViewCell.xib */; };
+		0DEE743D1FE76A2A0046A983 /* BXLImageCollectionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE742E1FE76A2A0046A983 /* BXLImageCollectionCellModel.m */; };
+		0DEE743E1FE76A2A0046A983 /* BXLImageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE74301FE76A2A0046A983 /* BXLImageCollectionView.m */; };
+		0DEE743F1FE76A2A0046A983 /* BXLImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE74321FE76A2A0046A983 /* BXLImageCollectionViewCell.m */; };
+		0DEE74401FE76A2A0046A983 /* BXLImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DEE74331FE76A2A0046A983 /* BXLImageCollectionViewCell.xib */; };
+		0DEE74411FE76A2A0046A983 /* BXLBrowserImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE74361FE76A2A0046A983 /* BXLBrowserImageCellModel.m */; };
+		0DEE74421FE76A2A0046A983 /* BXLBrowserImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE74381FE76A2A0046A983 /* BXLBrowserImageCollectionViewCell.m */; };
+		0DEE74431FE76A2A0046A983 /* BXLBrowserImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE743A1FE76A2A0046A983 /* BXLBrowserImageManager.m */; };
+		0DEE74441FE76A2A0046A983 /* BXLBrowserImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE743C1FE76A2A0046A983 /* BXLBrowserImageViewController.m */; };
+		0DEE74481FE76EC60046A983 /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE74471FE76EC50046A983 /* UIDeviceHardware.m */; };
 		4D6423B283273B7B8D670374 /* libPods-LWImageBrowserUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 212A240E927A19B68B3B6761 /* libPods-LWImageBrowserUITests.a */; };
 		F694E744A4D24C296D1E2FCE /* libPods-LWImageBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C17001F1980C8086495B58 /* libPods-LWImageBrowser.a */; };
 		FF9B250016CDDD1DD13C910C /* libPods-LWImageBrowserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B7DF343C6499E5A16FD4DA /* libPods-LWImageBrowserTests.a */; };
@@ -48,14 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D147C8D1E8BB7D100C3636F /* ImageCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCellModel.h; sourceTree = "<group>"; };
-		0D147C8E1E8BB7D200C3636F /* ImageCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCellModel.m; sourceTree = "<group>"; };
-		0D147C911E8BC06500C3636F /* LWImageBrowserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWImageBrowserManager.h; sourceTree = "<group>"; };
-		0D147C921E8BC06500C3636F /* LWImageBrowserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWImageBrowserManager.m; sourceTree = "<group>"; };
-		0D147C941E8BC10B00C3636F /* LWImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWImageBrowserViewController.h; sourceTree = "<group>"; };
-		0D147C951E8BC10B00C3636F /* LWImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWImageBrowserViewController.m; sourceTree = "<group>"; };
-		0D147C9A1E8BFCE700C3636F /* LWBrowerItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWBrowerItemModel.h; sourceTree = "<group>"; };
-		0D147C9B1E8BFCE700C3636F /* LWBrowerItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWBrowerItemModel.m; sourceTree = "<group>"; };
 		0D576ADC1E892177004DD88A /* LWImageBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWImageBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D576AE01E892177004DD88A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D576AE21E892177004DD88A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,16 +63,24 @@
 		0D576B001E892177004DD88A /* LWImageBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LWImageBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D576B041E892177004DD88A /* LWImageBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWImageBrowserUITests.m; sourceTree = "<group>"; };
 		0D576B061E892177004DD88A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D576B121E8921BC004DD88A /* NetEasyTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetEasyTabView.h; sourceTree = "<group>"; };
-		0D576B131E8921BC004DD88A /* NetEasyTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetEasyTabView.m; sourceTree = "<group>"; };
-		0D576B171E892D9A004DD88A /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
-		0D576B181E892D9A004DD88A /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
-		0D576B191E892D9A004DD88A /* ImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
-		0DB3C24C1E8E415300F17506 /* JPFPSStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPFPSStatus.h; sourceTree = "<group>"; };
-		0DB3C24D1E8E415300F17506 /* JPFPSStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFPSStatus.m; sourceTree = "<group>"; };
-		0DF47C291E8C017F00258263 /* LWImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWImageCollectionViewCell.h; sourceTree = "<group>"; };
-		0DF47C2A1E8C017F00258263 /* LWImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWImageCollectionViewCell.m; sourceTree = "<group>"; };
-		0DF47C2B1E8C017F00258263 /* LWImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LWImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		0DEE742D1FE76A2A0046A983 /* BXLImageCollectionCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLImageCollectionCellModel.h; sourceTree = "<group>"; };
+		0DEE742E1FE76A2A0046A983 /* BXLImageCollectionCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLImageCollectionCellModel.m; sourceTree = "<group>"; };
+		0DEE742F1FE76A2A0046A983 /* BXLImageCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLImageCollectionView.h; sourceTree = "<group>"; };
+		0DEE74301FE76A2A0046A983 /* BXLImageCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLImageCollectionView.m; sourceTree = "<group>"; };
+		0DEE74311FE76A2A0046A983 /* BXLImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLImageCollectionViewCell.h; sourceTree = "<group>"; };
+		0DEE74321FE76A2A0046A983 /* BXLImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLImageCollectionViewCell.m; sourceTree = "<group>"; };
+		0DEE74331FE76A2A0046A983 /* BXLImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BXLImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		0DEE74351FE76A2A0046A983 /* BXLBrowserImageCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLBrowserImageCellModel.h; sourceTree = "<group>"; };
+		0DEE74361FE76A2A0046A983 /* BXLBrowserImageCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLBrowserImageCellModel.m; sourceTree = "<group>"; };
+		0DEE74371FE76A2A0046A983 /* BXLBrowserImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLBrowserImageCollectionViewCell.h; sourceTree = "<group>"; };
+		0DEE74381FE76A2A0046A983 /* BXLBrowserImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLBrowserImageCollectionViewCell.m; sourceTree = "<group>"; };
+		0DEE74391FE76A2A0046A983 /* BXLBrowserImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLBrowserImageManager.h; sourceTree = "<group>"; };
+		0DEE743A1FE76A2A0046A983 /* BXLBrowserImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLBrowserImageManager.m; sourceTree = "<group>"; };
+		0DEE743B1FE76A2A0046A983 /* BXLBrowserImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLBrowserImageViewController.h; sourceTree = "<group>"; };
+		0DEE743C1FE76A2A0046A983 /* BXLBrowserImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLBrowserImageViewController.m; sourceTree = "<group>"; };
+		0DEE74451FE76BC80046A983 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0DEE74461FE76EC50046A983 /* UIDeviceHardware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDeviceHardware.h; sourceTree = "<group>"; };
+		0DEE74471FE76EC50046A983 /* UIDeviceHardware.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDeviceHardware.m; sourceTree = "<group>"; };
 		1BB37B03DE879EEF06E9B2A2 /* Pods-LWImageBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWImageBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LWImageBrowser/Pods-LWImageBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		212A240E927A19B68B3B6761 /* libPods-LWImageBrowserUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LWImageBrowserUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1973415271A914FD129C5C /* Pods-LWImageBrowserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWImageBrowserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LWImageBrowserTests/Pods-LWImageBrowserTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,22 +120,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D147C901E8BC04500C3636F /* LWImageBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				0D147C911E8BC06500C3636F /* LWImageBrowserManager.h */,
-				0D147C921E8BC06500C3636F /* LWImageBrowserManager.m */,
-				0D147C941E8BC10B00C3636F /* LWImageBrowserViewController.h */,
-				0D147C951E8BC10B00C3636F /* LWImageBrowserViewController.m */,
-				0DF47C291E8C017F00258263 /* LWImageCollectionViewCell.h */,
-				0DF47C2A1E8C017F00258263 /* LWImageCollectionViewCell.m */,
-				0DF47C2B1E8C017F00258263 /* LWImageCollectionViewCell.xib */,
-				0D147C9A1E8BFCE700C3636F /* LWBrowerItemModel.h */,
-				0D147C9B1E8BFCE700C3636F /* LWBrowerItemModel.m */,
-			);
-			path = LWImageBrowser;
-			sourceTree = "<group>";
-		};
 		0D576AD31E892177004DD88A = {
 			isa = PBXGroup;
 			children = (
@@ -162,24 +145,17 @@
 		0D576ADE1E892177004DD88A /* LWImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				0D147C901E8BC04500C3636F /* LWImageBrowser */,
+				0DEE74341FE76A2A0046A983 /* BrowserImage */,
+				0DEE742C1FE76A2A0046A983 /* ImageCollectionView */,
 				0D576AE21E892177004DD88A /* AppDelegate.h */,
 				0D576AE31E892177004DD88A /* AppDelegate.m */,
-				0DB3C24C1E8E415300F17506 /* JPFPSStatus.h */,
-				0DB3C24D1E8E415300F17506 /* JPFPSStatus.m */,
 				0D576AE51E892177004DD88A /* ViewController.h */,
 				0D576AE61E892177004DD88A /* ViewController.m */,
-				0D576B171E892D9A004DD88A /* ImageTableViewCell.h */,
-				0D576B181E892D9A004DD88A /* ImageTableViewCell.m */,
-				0D576B191E892D9A004DD88A /* ImageTableViewCell.xib */,
-				0D576B121E8921BC004DD88A /* NetEasyTabView.h */,
-				0D576B131E8921BC004DD88A /* NetEasyTabView.m */,
-				0D147C8D1E8BB7D100C3636F /* ImageCellModel.h */,
-				0D147C8E1E8BB7D200C3636F /* ImageCellModel.m */,
 				0D576AE81E892177004DD88A /* Main.storyboard */,
 				0D576AEB1E892177004DD88A /* Assets.xcassets */,
 				0D576AED1E892177004DD88A /* LaunchScreen.storyboard */,
 				0D576AF01E892177004DD88A /* Info.plist */,
+				0DEE74451FE76BC80046A983 /* PrefixHeader.pch */,
 				0D576ADF1E892177004DD88A /* Supporting Files */,
 			);
 			path = LWImageBrowser;
@@ -209,6 +185,37 @@
 				0D576B061E892177004DD88A /* Info.plist */,
 			);
 			path = LWImageBrowserUITests;
+			sourceTree = "<group>";
+		};
+		0DEE742C1FE76A2A0046A983 /* ImageCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0DEE742D1FE76A2A0046A983 /* BXLImageCollectionCellModel.h */,
+				0DEE742E1FE76A2A0046A983 /* BXLImageCollectionCellModel.m */,
+				0DEE742F1FE76A2A0046A983 /* BXLImageCollectionView.h */,
+				0DEE74301FE76A2A0046A983 /* BXLImageCollectionView.m */,
+				0DEE74311FE76A2A0046A983 /* BXLImageCollectionViewCell.h */,
+				0DEE74321FE76A2A0046A983 /* BXLImageCollectionViewCell.m */,
+				0DEE74331FE76A2A0046A983 /* BXLImageCollectionViewCell.xib */,
+			);
+			path = ImageCollectionView;
+			sourceTree = "<group>";
+		};
+		0DEE74341FE76A2A0046A983 /* BrowserImage */ = {
+			isa = PBXGroup;
+			children = (
+				0DEE74461FE76EC50046A983 /* UIDeviceHardware.h */,
+				0DEE74471FE76EC50046A983 /* UIDeviceHardware.m */,
+				0DEE74351FE76A2A0046A983 /* BXLBrowserImageCellModel.h */,
+				0DEE74361FE76A2A0046A983 /* BXLBrowserImageCellModel.m */,
+				0DEE74371FE76A2A0046A983 /* BXLBrowserImageCollectionViewCell.h */,
+				0DEE74381FE76A2A0046A983 /* BXLBrowserImageCollectionViewCell.m */,
+				0DEE74391FE76A2A0046A983 /* BXLBrowserImageManager.h */,
+				0DEE743A1FE76A2A0046A983 /* BXLBrowserImageManager.m */,
+				0DEE743B1FE76A2A0046A983 /* BXLBrowserImageViewController.h */,
+				0DEE743C1FE76A2A0046A983 /* BXLBrowserImageViewController.m */,
+			);
+			path = BrowserImage;
 			sourceTree = "<group>";
 		};
 		14792B12E26110A9646E4A58 /* Frameworks */ = {
@@ -310,7 +317,7 @@
 				TargetAttributes = {
 					0D576ADB1E892177004DD88A = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = A5HS3RH994;
+						DevelopmentTeam = EV459VZ2V3;
 						ProvisioningStyle = Automatic;
 					};
 					0D576AF41E892177004DD88A = {
@@ -351,8 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D576AEF1E892177004DD88A /* LaunchScreen.storyboard in Resources */,
-				0D576B1B1E892D9A004DD88A /* ImageTableViewCell.xib in Resources */,
-				0DF47C2D1E8C017F00258263 /* LWImageCollectionViewCell.xib in Resources */,
+				0DEE74401FE76A2A0046A983 /* BXLImageCollectionViewCell.xib in Resources */,
 				0D576AEC1E892177004DD88A /* Assets.xcassets in Resources */,
 				0D576AEA1E892177004DD88A /* Main.storyboard in Resources */,
 			);
@@ -517,17 +523,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D147C9C1E8BFCE700C3636F /* LWBrowerItemModel.m in Sources */,
+				0DEE74441FE76A2A0046A983 /* BXLBrowserImageViewController.m in Sources */,
 				0D576AE71E892177004DD88A /* ViewController.m in Sources */,
-				0D147C8F1E8BB7D200C3636F /* ImageCellModel.m in Sources */,
-				0D147C961E8BC10B00C3636F /* LWImageBrowserViewController.m in Sources */,
+				0DEE74421FE76A2A0046A983 /* BXLBrowserImageCollectionViewCell.m in Sources */,
 				0D576AE41E892177004DD88A /* AppDelegate.m in Sources */,
-				0D576B1A1E892D9A004DD88A /* ImageTableViewCell.m in Sources */,
-				0D576B141E8921BC004DD88A /* NetEasyTabView.m in Sources */,
-				0DF47C2C1E8C017F00258263 /* LWImageCollectionViewCell.m in Sources */,
-				0DB3C24E1E8E415300F17506 /* JPFPSStatus.m in Sources */,
+				0DEE74481FE76EC60046A983 /* UIDeviceHardware.m in Sources */,
+				0DEE74431FE76A2A0046A983 /* BXLBrowserImageManager.m in Sources */,
+				0DEE74411FE76A2A0046A983 /* BXLBrowserImageCellModel.m in Sources */,
+				0DEE743E1FE76A2A0046A983 /* BXLImageCollectionView.m in Sources */,
+				0DEE743F1FE76A2A0046A983 /* BXLImageCollectionViewCell.m in Sources */,
 				0D576AE11E892177004DD88A /* main.m in Sources */,
-				0D147C931E8BC06500C3636F /* LWImageBrowserManager.m in Sources */,
+				0DEE743D1FE76A2A0046A983 /* BXLImageCollectionCellModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,7 +683,8 @@
 			baseConfigurationReference = 1BB37B03DE879EEF06E9B2A2 /* Pods-LWImageBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A5HS3RH994;
+				DEVELOPMENT_TEAM = EV459VZ2V3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LWImageBrowser/PrefixHeader.pch";
 				INFOPLIST_FILE = LWImageBrowser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -691,7 +698,8 @@
 			baseConfigurationReference = BD44235296C1B3C30C71C6B1 /* Pods-LWImageBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A5HS3RH994;
+				DEVELOPMENT_TEAM = EV459VZ2V3;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LWImageBrowser/PrefixHeader.pch";
 				INFOPLIST_FILE = LWImageBrowser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
