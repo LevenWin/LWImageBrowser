@@ -13,10 +13,7 @@
 #define kBXLScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kBXLIsIphoneX  ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 #define BXLImage(name)  [UIImage imageNamed:name]
+#import "BXLBrowserImageManager.h"
 
-#import "Masonry.h"
-#import "YYKit.h"
-#import "UIImageView+WebCache.h"
-#import "SDWebImageDownloader.h"
 
 #endif /* BXLBrowserHeader_h */
