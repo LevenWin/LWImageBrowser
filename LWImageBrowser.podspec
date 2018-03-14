@@ -115,7 +115,6 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -131,9 +130,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "SDWebImage", "~> 4.2.1"
-  s.dependency "Masonry", "~> 1.1.0"
-  s.dependency "YYKit", "~> 1.0.9"
+  s.dependency "SDWebImage"
+  s.dependency "Masonry"
+  s.dependency "YYKit"
 
 
 end
