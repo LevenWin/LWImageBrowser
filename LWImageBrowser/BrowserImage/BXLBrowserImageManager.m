@@ -11,7 +11,8 @@
 #import "Masonry.h"
 #import "YYKit.h"
 #import "UIImageView+WebCache.h"
-#import "SDWebImageDownloader.h"@implementation BXLBrowserImageManager
+#import "SDWebImageDownloader.h"
+@implementation BXLBrowserImageManager
 
 + (instancetype)managerInstance{
     return [[self class] new];
