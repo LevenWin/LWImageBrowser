@@ -8,6 +8,7 @@
 
 #import "BXLBrowserImageCollectionViewCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "BXLBrowserHeader.h"
 
 @interface BXLBrowserImageCollectionViewCell()<UIScrollViewDelegate>
 
@@ -95,8 +96,8 @@
     if (CGSizeEqualToSize(imageSize, CGSizeZero)){
         return imageSize;
     }
-    CGFloat height = imageSize.height / ( imageSize.width / kScreenWidth) ;
-    return CGSizeMake(kScreenWidth, height);
+    CGFloat height = imageSize.height / ( imageSize.width / kBXLScreenWidth) ;
+    return CGSizeMake(kBXLScreenWidth, height);
 }
 
 - (UIImage *)getPlaceholderImage{
@@ -167,7 +168,7 @@
     }else if (panGesture.state == UIGestureRecognizerStateChanged){
         CGFloat offsetY = (point.y - panGestureBeginPoint.y);
         offsetY = fabs(offsetY);
-        scale = self.originalScale - offsetY / kScreenWidth * 0.8 ;
+        scale = self.originalScale - offsetY / kBXLScreenWidth * 0.8 ;
         self.contentView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:1 - (self.originalScale - scale)];
        
         scale = scale <= 0.4 ? 0.4 : scale;
@@ -219,8 +220,8 @@
     CGPoint touchPoint = [doubleTap locationInView:self.mainScrollView];
     if (self.mainScrollView.zoomScale <= 1.0) {
         float newscale=2;
-        if (self.contentImageView.frame.size.height * 2 <= kScreenHeight) {
-            newscale = kScreenHeight / self.mainScrollView.contentSize.height ;
+        if (self.contentImageView.frame.size.height * 2 <= kBXLScreenHeight) {
+            newscale = kBXLScreenHeight / self.mainScrollView.contentSize.height ;
         }
         CGRect zoomRect = [self zoomRectForScale:newscale withCenter:touchPoint];
         [self.mainScrollView zoomToRect:zoomRect animated:YES];
@@ -266,7 +267,7 @@
 
 - (UIScrollView *)mainScrollView{
     if (!_mainScrollView) {
-        _mainScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+        _mainScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kBXLScreenWidth, kBXLScreenHeight)];
         _mainScrollView.minimumZoomScale=1;
         _mainScrollView.maximumZoomScale=3;
         _mainScrollView.clipsToBounds=YES;

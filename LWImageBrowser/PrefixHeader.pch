@@ -16,6 +16,5 @@
 #import <Masonry.h>
 #import <SDWebImageDownloader.h>
 #import <UIImageView+WebCache.h>
-#import "UIDeviceHardware.h"
 #import <YYKit.h>
 #endif /* PrefixHeader_pch */

@@ -8,7 +8,7 @@
 #import "BXLBrowserImageViewController.h"
 #import "BXLBrowserImageCollectionViewCell.h"
 #import <SDWebImageDownloader.h>
-#import "UIDeviceHardware.h"
+#import "BXLBrowserHeader.h"
 
 static CGFloat kCellMinSpacing = 20;
 
@@ -73,7 +73,7 @@ UIScrollViewDelegate>
     
     self.pageView.hidden = (self.dataArr.count == 1);
     
-    [_collectView setContentOffset:CGPointMake(self.currentIndex*(kScreenWidth+kCellMinSpacing), 0)];
+    [_collectView setContentOffset:CGPointMake(self.currentIndex*(kBXLScreenWidth+kCellMinSpacing), 0)];
     
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureAction:)];
     [self.view addGestureRecognizer:pan];
@@ -107,9 +107,12 @@ UIScrollViewDelegate>
 }
 
 - (void)panGestureAction:(UIGestureRecognizer *)panGesture{
-    self.collectView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0];
-    
     BXLBrowserImageCollectionViewCell *cell = self.collectView.visibleCells.lastObject;
+    if (!cell.model.dragToDismiss) {
+        return;
+    }
+
+    self.collectView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0];
     [cell handlePanGestureAnimation:panGesture];
 }
 
@@ -156,7 +159,7 @@ UIScrollViewDelegate>
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    return CGSizeMake(kScreenWidth, kScreenHeight);
+    return CGSizeMake(kBXLScreenWidth, kBXLScreenHeight);
 }
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
     return UIEdgeInsetsMake(0,0,0,kCellMinSpacing);
@@ -197,10 +200,9 @@ UIScrollViewDelegate>
 #pragma --mark lazyLoad
 - (UIPageControl *)pageView{
     if (!_pageView) {
-        _pageView = [[UIPageControl alloc] initWithFrame:CGRectMake(0, kScreenHeight - 50, kScreenWidth, 50)];
-        
-        if ([UIDeviceHardware isIphoneX]) {
-            _pageView.top += 34;
+        _pageView = [[UIPageControl alloc] initWithFrame:CGRectMake(0, kBXLScreenHeight - 50, kBXLScreenWidth, 50)];
+        if (kBXLIsIphoneX) {
+            _pageView.top -= 34;
         }
         [_pageView addTarget:self action:@selector(pageDidChange) forControlEvents:UIControlEventValueChanged];
     }
@@ -209,7 +211,7 @@ UIScrollViewDelegate>
 
 - (UIImageView *)screenImageView{
     if (!_screenImageView) {
-        _screenImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+        _screenImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kBXLScreenWidth, kBXLScreenHeight)];
         _screenImageView.contentMode = UIViewContentModeScaleAspectFill;
     }
     return _screenImageView;
@@ -221,7 +223,7 @@ UIScrollViewDelegate>
         layout.minimumLineSpacing = kCellMinSpacing;
         layout.minimumInteritemSpacing = 0;
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-        _collectView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth+kCellMinSpacing, kScreenHeight) collectionViewLayout:layout];
+        _collectView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kBXLScreenWidth+kCellMinSpacing, kBXLScreenHeight) collectionViewLayout:layout];
         _collectView.pagingEnabled = YES;
         _collectView.dataSource = self;
         _collectView.delegate = self;

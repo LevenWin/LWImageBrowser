@@ -23,7 +23,6 @@
 		0DEE74421FE76A2A0046A983 /* BXLBrowserImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE74381FE76A2A0046A983 /* BXLBrowserImageCollectionViewCell.m */; };
 		0DEE74431FE76A2A0046A983 /* BXLBrowserImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE743A1FE76A2A0046A983 /* BXLBrowserImageManager.m */; };
 		0DEE74441FE76A2A0046A983 /* BXLBrowserImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE743C1FE76A2A0046A983 /* BXLBrowserImageViewController.m */; };
-		0DEE74481FE76EC60046A983 /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE74471FE76EC50046A983 /* UIDeviceHardware.m */; };
 		4D6423B283273B7B8D670374 /* libPods-LWImageBrowserUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 212A240E927A19B68B3B6761 /* libPods-LWImageBrowserUITests.a */; };
 		F694E744A4D24C296D1E2FCE /* libPods-LWImageBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C17001F1980C8086495B58 /* libPods-LWImageBrowser.a */; };
 		FF9B250016CDDD1DD13C910C /* libPods-LWImageBrowserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B7DF343C6499E5A16FD4DA /* libPods-LWImageBrowserTests.a */; };
@@ -63,6 +62,7 @@
 		0D576B001E892177004DD88A /* LWImageBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LWImageBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D576B041E892177004DD88A /* LWImageBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWImageBrowserUITests.m; sourceTree = "<group>"; };
 		0D576B061E892177004DD88A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DBB9D342058F4F7002010A5 /* BXLBrowserHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BXLBrowserHeader.h; sourceTree = "<group>"; };
 		0DEE742D1FE76A2A0046A983 /* BXLImageCollectionCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLImageCollectionCellModel.h; sourceTree = "<group>"; };
 		0DEE742E1FE76A2A0046A983 /* BXLImageCollectionCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLImageCollectionCellModel.m; sourceTree = "<group>"; };
 		0DEE742F1FE76A2A0046A983 /* BXLImageCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLImageCollectionView.h; sourceTree = "<group>"; };
@@ -79,8 +79,6 @@
 		0DEE743B1FE76A2A0046A983 /* BXLBrowserImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLBrowserImageViewController.h; sourceTree = "<group>"; };
 		0DEE743C1FE76A2A0046A983 /* BXLBrowserImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLBrowserImageViewController.m; sourceTree = "<group>"; };
 		0DEE74451FE76BC80046A983 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		0DEE74461FE76EC50046A983 /* UIDeviceHardware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDeviceHardware.h; sourceTree = "<group>"; };
-		0DEE74471FE76EC50046A983 /* UIDeviceHardware.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDeviceHardware.m; sourceTree = "<group>"; };
 		1BB37B03DE879EEF06E9B2A2 /* Pods-LWImageBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWImageBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LWImageBrowser/Pods-LWImageBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		212A240E927A19B68B3B6761 /* libPods-LWImageBrowserUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LWImageBrowserUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1973415271A914FD129C5C /* Pods-LWImageBrowserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWImageBrowserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LWImageBrowserTests/Pods-LWImageBrowserTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,8 +202,6 @@
 		0DEE74341FE76A2A0046A983 /* BrowserImage */ = {
 			isa = PBXGroup;
 			children = (
-				0DEE74461FE76EC50046A983 /* UIDeviceHardware.h */,
-				0DEE74471FE76EC50046A983 /* UIDeviceHardware.m */,
 				0DEE74351FE76A2A0046A983 /* BXLBrowserImageCellModel.h */,
 				0DEE74361FE76A2A0046A983 /* BXLBrowserImageCellModel.m */,
 				0DEE74371FE76A2A0046A983 /* BXLBrowserImageCollectionViewCell.h */,
@@ -214,6 +210,7 @@
 				0DEE743A1FE76A2A0046A983 /* BXLBrowserImageManager.m */,
 				0DEE743B1FE76A2A0046A983 /* BXLBrowserImageViewController.h */,
 				0DEE743C1FE76A2A0046A983 /* BXLBrowserImageViewController.m */,
+				0DBB9D342058F4F7002010A5 /* BXLBrowserHeader.h */,
 			);
 			path = BrowserImage;
 			sourceTree = "<group>";
@@ -527,7 +524,6 @@
 				0D576AE71E892177004DD88A /* ViewController.m in Sources */,
 				0DEE74421FE76A2A0046A983 /* BXLBrowserImageCollectionViewCell.m in Sources */,
 				0D576AE41E892177004DD88A /* AppDelegate.m in Sources */,
-				0DEE74481FE76EC60046A983 /* UIDeviceHardware.m in Sources */,
 				0DEE74431FE76A2A0046A983 /* BXLBrowserImageManager.m in Sources */,
 				0DEE74411FE76A2A0046A983 /* BXLBrowserImageCellModel.m in Sources */,
 				0DEE743E1FE76A2A0046A983 /* BXLImageCollectionView.m in Sources */,
