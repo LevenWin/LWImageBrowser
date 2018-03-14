@@ -22,12 +22,27 @@
         return;
     }
     
+    [self setDefaultSelected];
     BXLBrowserImageViewController *vc = [[BXLBrowserImageViewController alloc] init];
-    
     vc.dataArr = self.images;
     vc.screenImage = [self screenshot];
     
     [self.inViewController presentViewController:vc animated:NO completion:nil];
+}
+
+// 如果没有设定选定的imageModel,则默认第一个
+- (void)setDefaultSelected {
+    BXLBrowserImageCellModel *selectedModel = nil;
+    for (BXLBrowserImageCellModel *item in _images) {
+        if (item.isSelected) {
+            selectedModel = item;
+            break;
+        }
+    }
+    if (!selectedModel) {
+        selectedModel = _images.firstObject;
+        selectedModel.isSelected = YES;
+    }
 }
 
 - (BOOL)checkIfHasCacheCurrentImage{

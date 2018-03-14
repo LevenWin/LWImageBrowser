@@ -9,5 +9,12 @@
 #import "BXLBrowserImageCellModel.h"
 
 @implementation BXLBrowserImageCellModel
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _dragToDismiss = YES;
+    }
+    return self;
+}
 @end

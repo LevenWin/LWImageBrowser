@@ -107,9 +107,12 @@ UIScrollViewDelegate>
 }
 
 - (void)panGestureAction:(UIGestureRecognizer *)panGesture{
-    self.collectView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0];
-    
     BXLBrowserImageCollectionViewCell *cell = self.collectView.visibleCells.lastObject;
+    if (!cell.model.dragToDismiss) {
+        return;
+    }
+
+    self.collectView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0];
     [cell handlePanGestureAnimation:panGesture];
 }
 
