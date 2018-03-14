@@ -7,7 +7,6 @@
 //
 
 #import "BXLBrowserImageCollectionViewCell.h"
-#import <SDWebImage/UIImageView+WebCache.h>
 #import "BXLBrowserHeader.h"
 
 @interface BXLBrowserImageCollectionViewCell()<UIScrollViewDelegate>
@@ -105,7 +104,7 @@
     if (image) {
         return image;
     }else{
-        return Image(@"placeholder_img.png");
+        return nil;
     }
 }
 

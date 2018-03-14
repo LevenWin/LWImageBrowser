@@ -8,7 +8,7 @@
 
 #import "BXLImageCollectionView.h"
 #import "BXLImageCollectionViewCell.h"
-#import "Masonry.h"
+#import "BXLBrowserHeader.h"
 
 @interface BXLImageCollectionView()<
 BXLImageCollectionViewCellDelegate,

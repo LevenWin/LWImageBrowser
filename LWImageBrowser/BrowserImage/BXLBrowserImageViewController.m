@@ -7,7 +7,6 @@
 
 #import "BXLBrowserImageViewController.h"
 #import "BXLBrowserImageCollectionViewCell.h"
-#import <SDWebImageDownloader.h>
 #import "BXLBrowserHeader.h"
 
 static CGFloat kCellMinSpacing = 20;

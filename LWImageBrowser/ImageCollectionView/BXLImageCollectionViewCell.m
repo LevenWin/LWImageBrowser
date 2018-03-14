@@ -8,8 +8,7 @@
 
 #import "BXLImageCollectionViewCell.h"
 #import "BXLImageCollectionCellModel.h"
-#import <SDWebImage/UIImageView+WebCache.h>
-#import <Masonry.h>
+#import "BXLBrowserHeader.h"
 
 @interface BXLImageCollectionViewCell()
 @property (strong, nonatomic) IBOutlet UIButton *selecteButton;
@@ -35,21 +34,21 @@
     if (self.model.image) {
         _contenImageView.image = self.model.image;
     }else if (self.model.imageUrl){
-        [_contenImageView sd_setImageWithURL:[NSURL URLWithString:self.model.imageUrl] placeholderImage:Image(@"placeholder_img")];
+        [_contenImageView sd_setImageWithURL:[NSURL URLWithString:self.model.imageUrl] placeholderImage:(@"placeholder_img")];
     }
     if (self.model.ifShowDeleteButton
         || self.model.ifShowSelectButton) {
         self.selecteButton.hidden = NO;
         
         if (self.model.ifShowSelectButton) {
-            [self.selecteButton setImage:Image(@"image_unselect") forState:UIControlStateNormal];
-            [self.selecteButton setImage:Image(@"new_selected") forState:UIControlStateSelected];
+            [self.selecteButton setImage:BXLImage(@"image_unselect") forState:UIControlStateNormal];
+            [self.selecteButton setImage:BXLImage(@"new_selected") forState:UIControlStateSelected];
 
             self.selecteButton.selected = self.model.ifSelected;
 
         }else{
-            [self.selecteButton setImage:Image(@"delete_pic") forState:UIControlStateNormal];
-            [self.selecteButton setImage:Image(@"delete_pic") forState:UIControlStateSelected];
+            [self.selecteButton setImage:BXLImage(@"delete_pic") forState:UIControlStateNormal];
+            [self.selecteButton setImage:BXLImage(@"delete_pic") forState:UIControlStateSelected];
         }
         [_contenImageView mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self.contentView).mas_equalTo(UIEdgeInsetsMake(8, 8, 1, 1));

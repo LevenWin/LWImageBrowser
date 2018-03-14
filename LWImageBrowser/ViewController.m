@@ -10,6 +10,7 @@
 
 #import "BXLImageCollectionView.h"
 #import "BXLBrowserImageManager.h"
+#import "BXLBrowserHeader.h"
 
 @interface ViewController ()<BXLImageCollectionViewDelegate>
 
@@ -58,7 +59,7 @@
 
 - (void)initUI{
     self.collevtionView = [[BXLImageCollectionView alloc] initWithFrame:CGRectZero];
-    self.collevtionView.viewWidth = kScreenWidth;
+    self.collevtionView.viewWidth = kBXLScreenWidth;
     self.collevtionView.imageCollectionDelegate = self;
     self.collevtionView.cellRowCount = 4;
     self.collevtionView.minimumLineSpacing = 1;

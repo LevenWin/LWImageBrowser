@@ -8,8 +8,7 @@
 
 #import "BXLBrowserImageManager.h"
 #import "BXLBrowserImageViewController.h"
-#import <SDWebImage/UIImageView+WebCache.h>
-
+#import "BXLBrowserHeader.h"
 @implementation BXLBrowserImageManager
 
 + (instancetype)managerInstance{
