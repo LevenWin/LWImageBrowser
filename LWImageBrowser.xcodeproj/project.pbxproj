@@ -15,8 +15,8 @@
 		0D576AEF1E892177004DD88A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D576AED1E892177004DD88A /* LaunchScreen.storyboard */; };
 		0D576AFA1E892177004DD88A /* LWImageBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576AF91E892177004DD88A /* LWImageBrowserTests.m */; };
 		0D576B051E892177004DD88A /* LWImageBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D576B041E892177004DD88A /* LWImageBrowserUITests.m */; };
+		0DBB9D38205902AA002010A5 /* BXLImageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB9D37205902AA002010A5 /* BXLImageCollectionView.m */; };
 		0DEE743D1FE76A2A0046A983 /* BXLImageCollectionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE742E1FE76A2A0046A983 /* BXLImageCollectionCellModel.m */; };
-		0DEE743E1FE76A2A0046A983 /* BXLImageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE74301FE76A2A0046A983 /* BXLImageCollectionView.m */; };
 		0DEE743F1FE76A2A0046A983 /* BXLImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE74321FE76A2A0046A983 /* BXLImageCollectionViewCell.m */; };
 		0DEE74401FE76A2A0046A983 /* BXLImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DEE74331FE76A2A0046A983 /* BXLImageCollectionViewCell.xib */; };
 		0DEE74411FE76A2A0046A983 /* BXLBrowserImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE74361FE76A2A0046A983 /* BXLBrowserImageCellModel.m */; };
@@ -63,10 +63,10 @@
 		0D576B041E892177004DD88A /* LWImageBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWImageBrowserUITests.m; sourceTree = "<group>"; };
 		0D576B061E892177004DD88A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DBB9D342058F4F7002010A5 /* BXLBrowserHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BXLBrowserHeader.h; sourceTree = "<group>"; };
+		0DBB9D36205902AA002010A5 /* BXLImageCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLImageCollectionView.h; sourceTree = "<group>"; };
+		0DBB9D37205902AA002010A5 /* BXLImageCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLImageCollectionView.m; sourceTree = "<group>"; };
 		0DEE742D1FE76A2A0046A983 /* BXLImageCollectionCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLImageCollectionCellModel.h; sourceTree = "<group>"; };
 		0DEE742E1FE76A2A0046A983 /* BXLImageCollectionCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLImageCollectionCellModel.m; sourceTree = "<group>"; };
-		0DEE742F1FE76A2A0046A983 /* BXLImageCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLImageCollectionView.h; sourceTree = "<group>"; };
-		0DEE74301FE76A2A0046A983 /* BXLImageCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLImageCollectionView.m; sourceTree = "<group>"; };
 		0DEE74311FE76A2A0046A983 /* BXLImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXLImageCollectionViewCell.h; sourceTree = "<group>"; };
 		0DEE74321FE76A2A0046A983 /* BXLImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXLImageCollectionViewCell.m; sourceTree = "<group>"; };
 		0DEE74331FE76A2A0046A983 /* BXLImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BXLImageCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -188,10 +188,10 @@
 		0DEE742C1FE76A2A0046A983 /* ImageCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				0DBB9D36205902AA002010A5 /* BXLImageCollectionView.h */,
+				0DBB9D37205902AA002010A5 /* BXLImageCollectionView.m */,
 				0DEE742D1FE76A2A0046A983 /* BXLImageCollectionCellModel.h */,
 				0DEE742E1FE76A2A0046A983 /* BXLImageCollectionCellModel.m */,
-				0DEE742F1FE76A2A0046A983 /* BXLImageCollectionView.h */,
-				0DEE74301FE76A2A0046A983 /* BXLImageCollectionView.m */,
 				0DEE74311FE76A2A0046A983 /* BXLImageCollectionViewCell.h */,
 				0DEE74321FE76A2A0046A983 /* BXLImageCollectionViewCell.m */,
 				0DEE74331FE76A2A0046A983 /* BXLImageCollectionViewCell.xib */,
@@ -523,10 +523,10 @@
 				0DEE74441FE76A2A0046A983 /* BXLBrowserImageViewController.m in Sources */,
 				0D576AE71E892177004DD88A /* ViewController.m in Sources */,
 				0DEE74421FE76A2A0046A983 /* BXLBrowserImageCollectionViewCell.m in Sources */,
+				0DBB9D38205902AA002010A5 /* BXLImageCollectionView.m in Sources */,
 				0D576AE41E892177004DD88A /* AppDelegate.m in Sources */,
 				0DEE74431FE76A2A0046A983 /* BXLBrowserImageManager.m in Sources */,
 				0DEE74411FE76A2A0046A983 /* BXLBrowserImageCellModel.m in Sources */,
-				0DEE743E1FE76A2A0046A983 /* BXLImageCollectionView.m in Sources */,
 				0DEE743F1FE76A2A0046A983 /* BXLImageCollectionViewCell.m in Sources */,
 				0D576AE11E892177004DD88A /* main.m in Sources */,
 				0DEE743D1FE76A2A0046A983 /* BXLImageCollectionCellModel.m in Sources */,
