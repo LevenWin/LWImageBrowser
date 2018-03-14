@@ -132,8 +132,8 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "SDWebImage", "~> 4.2.1"
-  s.dependency "YYKit", "~> 1.0.9"
   s.dependency "Masonry", "~> 1.1.0"
+  s.dependency "YYKit", "~> 1.0.9"
 
 
 end
